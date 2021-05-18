@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MyMoone___Money_Saver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTo-nz-dR3">
+                        <rect key="frame" x="16" y="16" width="381" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ArrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="kno-fa-Vat">
+                                <rect key="frame" x="18" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4D2-hn-Suk"/>
+                                    <constraint firstAttribute="width" constant="40" id="ofp-lT-SCo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bayar Listrik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daY-2S-MgN">
+                                <rect key="frame" x="74" y="16" width="76.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Mei 2021 - 19:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqo-Fq-rFJ">
+                                <rect key="frame" x="74" y="38.5" width="114.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Rp. 200.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh7-gO-8gR">
+                                <rect key="frame" x="277.5" y="25" width="87.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eqo-Fq-rFJ" firstAttribute="leading" secondItem="kno-fa-Vat" secondAttribute="trailing" constant="16" id="Deg-Oy-YOs"/>
+                            <constraint firstItem="kno-fa-Vat" firstAttribute="leading" secondItem="vTo-nz-dR3" secondAttribute="leading" constant="18" id="F5w-XX-XCx"/>
+                            <constraint firstItem="kno-fa-Vat" firstAttribute="top" secondItem="vTo-nz-dR3" secondAttribute="top" constant="16" id="H9S-hi-hnS"/>
+                            <constraint firstAttribute="bottom" secondItem="eqo-Fq-rFJ" secondAttribute="bottom" constant="18" id="Z8a-VZ-VLX"/>
+                            <constraint firstAttribute="bottom" secondItem="kno-fa-Vat" secondAttribute="bottom" constant="16" id="cIc-Yp-lUy"/>
+                            <constraint firstItem="eqo-Fq-rFJ" firstAttribute="top" secondItem="daY-2S-MgN" secondAttribute="bottom" constant="4" id="fVj-xa-erC"/>
+                            <constraint firstItem="daY-2S-MgN" firstAttribute="top" secondItem="vTo-nz-dR3" secondAttribute="top" constant="16" id="iJs-X0-Qrt"/>
+                            <constraint firstAttribute="trailing" secondItem="Qh7-gO-8gR" secondAttribute="trailing" constant="16" id="mBJ-7c-2ld"/>
+                            <constraint firstItem="eqo-Fq-rFJ" firstAttribute="top" secondItem="daY-2S-MgN" secondAttribute="bottom" constant="4" id="n4K-QM-Nug"/>
+                            <constraint firstItem="daY-2S-MgN" firstAttribute="leading" secondItem="kno-fa-Vat" secondAttribute="trailing" constant="16" id="p8w-Ct-Moc"/>
+                            <constraint firstItem="Qh7-gO-8gR" firstAttribute="top" secondItem="vTo-nz-dR3" secondAttribute="top" constant="25" id="yMH-2Y-JkY"/>
+                            <constraint firstAttribute="bottom" secondItem="Qh7-gO-8gR" secondAttribute="bottom" constant="25" id="yTD-am-hNV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vTo-nz-dR3" secondAttribute="trailing" constant="16" id="2Rw-vl-3GY"/>
+                    <constraint firstItem="vTo-nz-dR3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="H59-Ig-hxU"/>
+                    <constraint firstItem="vTo-nz-dR3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Ik0-Hj-ORp"/>
+                    <constraint firstAttribute="bottom" secondItem="vTo-nz-dR3" secondAttribute="bottom" constant="16" id="pRn-Sw-Oot"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balance" destination="Qh7-gO-8gR" id="K5B-6t-mMO"/>
+                <outlet property="dateTime" destination="eqo-Fq-rFJ" id="8oJ-s9-PnF"/>
+                <outlet property="imageState" destination="kno-fa-Vat" id="1qj-d1-WuX"/>
+                <outlet property="title" destination="daY-2S-MgN" id="mIJ-UC-FcB"/>
+            </connections>
+            <point key="canvasLocation" x="205.07246376811597" y="84.040178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ArrowDown" width="20" height="20"/>
+    </resources>
+</document>
